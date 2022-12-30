@@ -1,0 +1,73 @@
+import bcrypt from "bcryptjs";
+const data = {
+  users: [
+    {
+      name: "Prakhar",
+      email: "admin@dsh.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: true,
+    },
+    {
+      name: "Johan",
+      email: "johan@dsh.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      // _id: "1",
+      name: "Nike Tshirt",
+      slug: "nike-slim-fit",
+      category: "Shirts",
+      image: "/images/p1.png",
+      price: 200,
+      countInStock: 10,
+      brand: "Nike",
+      rating: 2.5,
+      numReviews: 10,
+      description: "high quality shirts",
+    },
+    {
+      // _id: "2",
+      name: "Adidas Tshirt",
+      slug: "adidas-slim-fit",
+      category: "Shirts",
+      image: "/images/p2.png",
+      price: 150,
+      countInStock: 15,
+      brand: "Adidas",
+      rating: 1.5,
+      numReviews: 16,
+      description: "good quality shirts in affordable price",
+    },
+    {
+      // _id: "3",
+      name: "Levis jeans",
+      slug: "levis-slim-fit",
+      category: "Pants",
+      image: "/images/p3.png",
+      price: 180,
+      countInStock: 13,
+      brand: "Levis",
+      rating: 4.5,
+      numReviews: 19,
+      description: "good quality jeans in affordable price",
+    },
+    {
+      // _id: "4",
+      name: "Wrangler jeans",
+      slug: "wrangler-slim-fit",
+      category: "Pants",
+      image: "/images/p4.png",
+      price: 190,
+      countInStock: 19,
+      brand: "Wrangler",
+      rating: 3.0,
+      numReviews: 11,
+      description: "best quality jeans in affordable price",
+    },
+  ],
+};
+
+export default data;
